@@ -1,0 +1,230 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    /* padding: 20px; */
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  #question {
+    background-color: #f57424;
+    color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 0 2px 4px rgba(3, 3, 3, 0.8);
+  }
+
+  
+  #options {
+    display: flex;
+    background-color: #a1a1a1;
+    width: 50%;
+    border-radius: 8px;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  
+  #options button {
+    display: block;
+    width: 80%;
+    height: 40px;
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 10px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  
+  #options button:hover {
+    background-color: #f57424;
+  }
+  
+  #btn {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: flex-end;
+  }
+  
+  #next {
+    display: inline-block;
+    background-color: #0084ff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #next:hover {
+    background-color: #0060c0;
+  }
+  
+  #score {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  /* new styles */
+  .sections {
+    background-color: #24f564;
+    color: #000000;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 0 2px 4px rgba(3, 3, 3, 0.8);
+    /* width: 300px; */
+    height: 450px;
+    display: inline-block;
+    width: 30%;
+  }
+  .eachMusic {
+    background-color: #0084ff;
+    color: #000000;
+    border-radius: 16px;
+    /* padding: 20px; */
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 0 2px 4px rgba(3, 3, 3, 0.8);
+    /* width: 304px; */
+    height: 27px;
+    display: inline-block;
+    width: 100%;
+  }
+  .flex-container {
+    display: flex;
+    max-width: 100%; /* Ensures it doesn't overflow the viewport */
+    margin: auto;
+  }
+  /* MUSIC PLAYER SECTION */
+  .musicPlayerImageSections {
+    background-color: #1aa143;
+    color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 0 2px 4px rgba(3, 3, 3, 0.8);
+    /* width: 300px;
+    height: 350px; */
+    /* display: inline-block; */
+  }
+  
+  .music-player {
+    text-align: center;
+  }
+  
+  /* .controls button {
+    margin: 5px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  } */
+  .musicPlayerButton {
+    display: inline;
+    width: 22%;
+    height: 32px;
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 10px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 32px;
+    background-color: #efff00;
+  }
+  .addToPlayListBtn {
+    display: inline;
+    width: 57%;
+    height: 32px;
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 10px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 32px;
+    background-color: #efff00;
+  }
+  .createPlayListBtn {
+    display: inline;
+    width: 60%;
+    height: 32px;
+    cursor: pointer;
+    margin: auto;
+    /* margin-bottom: 10px; */
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 32px;
+    background-color: #efff00;
+  }
+  .createPlaylistInput{
+    display: block;
+    margin-bottom: 10px;
+    width: 95%;
+  }
+  /* TOGGLE SWITCH STYLES */
+  h1 {
+    color: green;
+}
+       
+/* toggle in label designing */
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 66px;
+  height: 18px;
+  background-color: white;
+  border-radius: 30px;
+  border: 2px solid gray;
+}
+       
+/* After slide changes */
+.toggle:after {
+  content: '';
+  position: absolute;
+  width: 19px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #857c7c;
+  /* top: 1px; */
+  /* left: 1px; */
+  transition: all 0.5s;
+}
+       
+/* Checkbox checked effect */
+.checkbox:checked + .toggle::after {
+    left : 49px; 
+}
+       
+/* Checkbox checked toggle label bg color */
+.checkbox:checked + .toggle {
+    background-color: #080808;
+}
+       
+/* Checkbox vanished */
+.checkbox { 
+    display : none;
+}
+.themeToggleText{
+  display: inline;
+}
+/* .themeToggle{
+
+} */

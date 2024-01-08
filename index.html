@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>Music Player</h1>
+  <!-- THEME CHANGE TOGGLE SWITCH STARTS -->
+  <div class="themeToggle">
+    <p class="themeToggleText">change theme</p>
+    <input type="checkbox" id="switch" class="checkbox" />
+    <label for="switch" class="toggle"></label>
+  </div>
+  <!-- THEME CHANGE TOGGLE SWITCH ENDS -->
+  <div class="flex-container">
+    <!-- songs list with category sections -->
+    <div class="sections" id ="section1">
+      <label for="cars">Filter by Genre:</label>
+      <select name="cars" id="cars">
+        <option value="All">All</option>
+        <option value="Rock">Rock</option>
+        <option value="Pop">Pop</option>
+        <option value="Hiphop">Hiphop</option>
+      </select>
+      
+      <h3>All Songs</h3>
+    </div>
+    <!-- musicplayer sections -->
+    <div class="sections" id ="section2">
+      <!-- <div class="musicPlayerImageSections">
+        <img src="https://www.quertime.com/wp-content/uploads/2011/08/best_websites_to_download_free_music_mp3_songs_and_tracks_legally.jpg" height="100px" width="100px" >
+        <h3 >music title</h3>
+      </div>
+      <div class="music-player">
+        <audio id="audioPlayer" controls>
+          <source src="assets/mp3/sample-3s.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <div class="controls">
+          <button class="musicPlayerButton">Prev</button>
+          <button id="playBtn" class="musicPlayerButton">Play</button>
+          <button id="pauseBtn" class="musicPlayerButton">Pause</button>
+          <button class="musicPlayerButton">Next</button>
+          <button class="addToPlayListBtn">Add To Playlist</button>
+        </div>
+      </div> -->
+    </div>
+
+
+    <div class="sections" id ="section3">
+      
+      <input type="text" placeholder="Name of playlist" class="createPlaylistInput" id="createPlaylistInput">
+      <button class="createPlayListBtn" id="createPlayListBtn">create Playlist</button>
+      <h3>All Playlist</h3>
+      <div class="eachMusic">gggg</div>
+      <div class="eachMusic">gggg</div>
+      <h3>Current Playlist Songs</h3>
+      <div class="eachMusic">gggg</div>
+      <div class="eachMusic">gggg</div>
+      
+    </div>
+  </div>
+
+
+  <div id="question"></div>
+  <div id="options"></div>
+  <div id="score"></div>
+  <div id="btn">
+    <button id="next">Next..</button>
+  </div>
+  <script src="quiz.js"></script>
+</body>
+
+</html>
