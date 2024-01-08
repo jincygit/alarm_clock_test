@@ -242,6 +242,4 @@ function addToPlaylist(){
 function createPlaylist(){
   console.log("dd");
   console.log(createPlaylistInput.val)
-  
-
 }
