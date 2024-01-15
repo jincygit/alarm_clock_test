@@ -23,6 +23,16 @@ document.getElementById('month').textContent = months[currentDate.getMonth()];
 document.getElementById('date').textContent = currentDate.getDate();
 document.getElementById('year').textContent = currentDate.getFullYear();
 
+// SET DEFAULT TIME AT ALARM INPUTS
+ const currentDateTime = new Date();
+ let currentHour = currentDateTime.getHours();
+ let currentAmPmValue = currentHour >= 12 ? 'PM' : 'AM';
+//  setHours.value = currentDateTime.getHours();
+//  setMinutes.value = currentDateTime.getMinutes();
+//  setSeconds.value = currentDateTime.getSeconds();
+ setAmPm.value =currentAmPmValue;
+ 
+
 
 // DROPDOWN MENU FOR HOURS, MINUTES, SECONDS USING SETINTERVAL
 window.addEventListener("DOMContentLoaded", (event) => {
@@ -84,15 +94,17 @@ function getInput(e) {
   const minuteValue = setMinutes.value;
   const secondValue = setSeconds.value;
   var amPmValue = setAmPm.value;
-  console.log(amPmValue)
   
+  //GET CURRENT HOURS
+  const currentTime = new Date();
+  let currentTimeHour = currentTime.getHours();
  
-  // Check whether AM or PM for selected value
-  let newAmPmValue = hourValue >= 12 ? 'PM' : 'AM';
+  // CHECK WHETHER AM OR PM FOR SELECTED VALUE
+  let newAmPmValue = currentTimeHour >= 12 ? 'PM' : 'AM';
   //IF NO AM OR PM PROVIDED
   if (amPmValue =='AM/PM'){
-    amPmValue='PM';
-    setAmPm.value ='PM';
+    amPmValue=newAmPmValue;
+    setAmPm.value =newAmPmValue;
   }
 
   const alarmTime = convertToTime(
