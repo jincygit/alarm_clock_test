@@ -3,7 +3,7 @@ const currentTime = document.querySelector("#current-time");
 const setHours = document.querySelector("#hours");
 const setMinutes = document.querySelector("#minutes");
 const setSeconds = document.querySelector("#seconds");
-const setAmPm = document.querySelector("#am-pm");
+var setAmPm = document.querySelector("#am-pm");
 const setAlarmSubmitButton = document.querySelector("#submitButton");
 const alarmContainer = document.querySelector("#alarms-list-container");
 
@@ -83,14 +83,16 @@ function getInput(e) {
   const hourValue = setHours.value;
   const minuteValue = setMinutes.value;
   const secondValue = setSeconds.value;
-  const amPmValue = setAmPm.value;
+  var amPmValue = setAmPm.value;
+  console.log(amPmValue)
   
  
   // Check whether AM or PM for selected value
   let newAmPmValue = hourValue >= 12 ? 'PM' : 'AM';
   //IF NO AM OR PM PROVIDED
   if (amPmValue =='AM/PM'){
-    amPmValue=newAmPmValue;
+    amPmValue='PM';
+    setAmPm.value ='PM';
   }
 
   const alarmTime = convertToTime(
