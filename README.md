@@ -55,10 +55,7 @@ When the user deletes an alarm make sure it “does not alerts the user”
         |-->sliderimg.js
         
 
-### Access the Application:
-   http://localhost:3000/
-
 ### Hoisted url
-    https://react-ecommerce-app-e50bd.web.app/
+    https://jincygit.github.io/alarm_clock_test/
 
     
